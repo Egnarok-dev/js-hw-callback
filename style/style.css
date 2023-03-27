@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../image/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  width: min(100% - 4rem, 20rem);
+  margin-inline: auto;
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.container .tasks a {
+  text-decoration: none;
+  color: white;
+}
+
+.container .tasks .planet {
+  margin: 25px;
+}
+
+.container .tasks .planet:first-child img {
+  width: 70px;
+  height: 70px;
+  margin-top: 20px;
+  margin-left: 300px;
+}
+
+.container .tasks .planet:last-child img {
+  border-radius: 100%;
+}
+
+.container .tasks .planet:nth-child(2) img {
+  width: 80px;
+  height: 80px;
+  margin-top: 40px;
+  margin-left: 100px;
+}
+.container .tasks .planet:nth-child(3) img {
+  width: 130px;
+  height: 130px;
+  margin-top: 50px;
+}
+.container .tasks .planet:nth-child(4) img {
+  width: 110px;
+  height: 110px;
+  margin-top: 30px;
+  margin-left: 170px;
+}
+
+.container .tasks .planet:last-child img {
+  width: 400px;
+  height: 400px;
+  margin-top: 40px;
+  margin-left: -50px;
+}
+
+.container .pulse img {
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 100px;
+  margin-top: 200px;
+}
+
+.container .pulse:first-child img {
+  animation: pulseMercury 2s infinite;
+}
+
+@-webkit-keyframes pulseMercury {
+  0% {
+    -webkit-box-shadow: 0 0 5px 1px rgba(25, 24, 24, 0.5),
+      inset 0 0 5px 1px rgba(25, 24, 24, 0.5);
+  }
+  50% {
+    -webkit-box-shadow: 0 0 15px 10px rgb(212, 209, 208),
+      inset 0 0 15px 10px rgb(194, 192, 192);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 5px 1px rgba(25, 24, 24, 0.5),
+      inset 0 0 5px 1px rgba(25, 24, 24, 0.5);
+  }
+}
+
+.container .pulse:nth-child(2) img {
+  animation: pulseVenus 2s infinite;
+}
+
+@-webkit-keyframes pulseVenus {
+  0% {
+    -webkit-box-shadow: 0 0 5px 1px rgba(41, 13, 2, 0.5),
+      inset 0 0 5px 1px rgba(41, 13, 2, 0.5);
+  }
+  50% {
+    -webkit-box-shadow: 0 0 15px 10px rgb(252, 211, 108),
+      inset 0 0 15px 10px rgb(248, 179, 89);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 5px 1px rgba(41, 13, 2, 0.5),
+      inset 0 0 5px 1px rgba(41, 13, 2, 0.5);
+  }
+}
+
+.container .pulse:nth-child(3) img {
+  animation: pulseEart 2s infinite;
+}
+
+@-webkit-keyframes pulseEart {
+  0% {
+    -webkit-box-shadow: 0 0 5px 1px rgba(4, 18, 42, 0.5),
+      inset 0 0 5px 1px rgba(4, 18, 42, 0.5);
+  }
+  50% {
+    -webkit-box-shadow: 0 0 15px 10px rgb(41, 99, 201),
+      inset 0 0 15px 10px rgb(41, 99, 201);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 5px 1px rgba(4, 18, 42, 0.5),
+      inset 0 0 5px 1px rgba(4, 18, 42, 0.5);
+  }
+}
+
+.container .pulse:nth-child(4) img {
+  animation: pulseMars 2s infinite;
+}
+
+@-webkit-keyframes pulseMars {
+  0% {
+    -webkit-box-shadow: 0 0 5px 1px rgba(142, 37, 6, 0.5),
+      inset 0 0 5px 1px rgba(142, 37, 6, 0.5);
+  }
+  50% {
+    -webkit-box-shadow: 0 0 15px 10px rgb(142, 6, 6),
+      inset 0 0 15px 10px rgb(142, 6, 6);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 5px 1px rgba(142, 37, 6, 0.5),
+      inset 0 0 5px 1px rgba(142, 37, 6, 0.5);
+  }
+}
+
+.container .pulse:last-child img {
+  animation: pulseJupiter 2s infinite;
+}
+
+@-webkit-keyframes pulseJupiter {
+  0% {
+    -webkit-box-shadow: 0 0 5px 1px rgba(27, 17, 17, 0.5),
+      inset 0 0 5px 1px rgba(27, 17, 17, 0.5);
+  }
+  50% {
+    -webkit-box-shadow: 0 0 15px 10px rgb(248, 227, 180),
+      inset 0 0 15px 10px rgb(248, 227, 180);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 5px 1px rgba(27, 17, 17, 0.5),
+      inset 0 0 5px 1px rgba(27, 17, 17, 0.5);
+  }
+}
+
